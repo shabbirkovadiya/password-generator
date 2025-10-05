@@ -1,13 +1,13 @@
-🎨 Color Code Generator 
+🔒 Password Generator 
 
-A Color Code APP Using ReactJS
+A Password Generator APP Using ReactJS
 
 📌 Live Link
 
-🔗 https://colorcodegeneratorsk.netlify.app
+🔗 https://passwordgenerator-sk.netlify.app
 
 🛠️ Built With
-library: React , Values.js
+library: React
 
 
 ✨ Features
