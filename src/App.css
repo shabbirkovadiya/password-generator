@@ -84,7 +84,7 @@ font-size: 12px;
   justify-content: center;
   align-items: start;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .check-box-list label{
   display: flex;
@@ -101,6 +101,13 @@ font-size: 12px;
 }
 .input-wrapper{
   position: relative;
+}
+.passLengthTooltip {
+  position: absolute;
+  left: 5px;
+  top: -18px;
+  font-size: 12px;
+  color: var(--main-color);
 }
 .PassLengthInput {
   width: 300px;

@@ -104,6 +104,7 @@ setIsCopied(true)
              {/* footer */}
              <div className="footer-wrapper">
               <div className="input-wrapper"> 
+                <span className="passLengthTooltip">Enter Password Length Below:</span>
                 <input
           type="number"
           placeholder="Enter Password Length"
