@@ -22,6 +22,8 @@ body {
   padding: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
 
 }
 
@@ -54,6 +56,7 @@ body {
   justify-content: center;
   width: 100%;
   margin-bottom: 40px;
+  position: relative;
 }
 .passwordDisplay input::placeholder{
 text-align: center;
@@ -61,7 +64,18 @@ color: red;
 font-family: "poppins";
 font-size: 12px;
 -webkit-text-fill-color: black;
-
+}
+.passwordDisplay button{
+  cursor: pointer;
+  z-index: 10;
+  width: 300px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  margin: auto;
+  border: none;  
+  color: transparent;
+  background-color: transparent;
 }
 
 .check-box-list{
@@ -175,10 +189,10 @@ font-size: 12px;
     background-position: 0;
   }
   60% {
-    background-position: 180px;
+    background-position: 300px;
   }
   100% {
-    background-position: 180px;
+    background-position: 300px;
   }
 }
 @-webkit-keyframes shine {
@@ -186,10 +200,10 @@ font-size: 12px;
     background-position: 0;
   }
   60% {
-    background-position: 180px;
+    background-position: 300px;
   }
   100% {
-    background-position: 180px;
+    background-position: 300px;
   }
 }
 @-o-keyframes shine {
@@ -197,10 +211,10 @@ font-size: 12px;
     background-position: 0;
   }
   60% {
-    background-position: 180px;
+    background-position: 300px;
   }
   100% {
-    background-position: 180px;
+    background-position: 300px;
   }
 }
 @keyframes shine {
@@ -208,9 +222,56 @@ font-size: 12px;
     background-position: 0;
   }
   60% {
-    background-position: 180px;
+    background-position: 300px;
   }
   100% {
-    background-position: 180px;
+    background-position: 300px;
   }
 }
+.hide{
+  opacity: 0;
+}
+.copied-text{
+  color: green;
+  animation: copied 1s ease-in-out;
+}
+@keyframes copied {
+   0% {
+    transform: translateY(0px);
+    scale: 1;
+  }
+  50% {
+       transform: translateY(-5px);
+       scale: 1.1;
+
+  }
+  100% {
+       transform: translateY(0px);
+       scale: 1;
+
+
+  }
+}
+
+
+
+/* =====  Start Media Queries Section  ===== */
+
+
+@media only screen and (max-width: 576px) {
+  .app-body h1{
+    font-size: 23px;
+}
+.app-body {
+  padding: 15px;
+  width: 100%;
+}
+.PassLengthInput {
+  width: 100%;
+  height: 40px;
+}
+
+  /*?  B - 576px to 768px   sm :- (Landscape and Portrait mobiles)  ?*/  
+}
+
+/* =====  End Media Queries Section  ===== */
